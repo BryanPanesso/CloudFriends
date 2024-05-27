@@ -1,0 +1,93 @@
+/* styles.css */
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Carrusel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* Sección de contacto */
+#contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-item img {
+        height: 200px;
+
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer .container {
+        padding: 10px;
+    }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Cambia #000 por el color deseado */
+    background-image: none; /* Remueve el ícono SVG predeterminado */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Hace que el fondo sea circular */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '‹'; /* Flecha izquierda para prev */
+    display: inline-block;
+    font-size: 30px;
+    color: #fff; /* Color de la flecha */
+    line-height: 30px;
+    text-align: center;
+}
+
+.carousel-control-next-icon::before {
+    content: '›'; /* Flecha derecha para next */
+}
