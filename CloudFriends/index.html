@@ -6,10 +6,11 @@
     <title>Restaurante</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Logo del restaurante" width="30" height="30">
                 Restaurante
@@ -18,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
                     <li class="nav-item"><a class="nav-link" href="#reviews">Opiniones</a></li>
@@ -32,18 +33,17 @@
         <section id="home" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/img1.jpg" class="d-block mx-auto w-50" alt="Primera imagen destacada">
+                    <img src="images/img1.jpg" class="d-block mx-auto w-75" alt="Primera imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
-                        
-                        <h5>Bienvenidos a nuestro restaurante</h5>
+                        <h5>Bienvenidos CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/img2.jpg" class="d-block mx-auto w-50" alt="Segunda imagen destacada">
+                    <img src="images/img2.jpg" class="d-block mx-auto w-75" alt="Segunda imagen destacada">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/img3.jpg" class="d-block mx-auto w-50" alt="Tercera imagen destacada">
+                    <img src="images/img3.jpg" class="d-block mx-auto w-75" alt="Tercera imagen destacada">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#home" role="button" data-slide="prev">
@@ -56,14 +56,14 @@
             </a>
         </section>
 
-        <section id="menu">
+        <section id="menu" class="text-center">
             <h2>Menú</h2>
             <div id="menu-list" class="row">
-                <!-- -->
+                <!-- Lista de platos cargada dinámicamente -->
             </div>
         </section>
 
-        <section id="reviews">
+        <section id="reviews" class="text-center">
             <h2>Opiniones de nuestros clientes</h2>
             <div class="review">
                 <p>Cliente 1: ¡Excelente comida y servicio!</p>
@@ -73,20 +73,20 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="text-center">
             <h2>Contacto</h2>
-            <form id="contact-form">
+            <form id="contact-form" class="mx-auto" style="max-width: 600px;">
                 <div class="form-group">
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" class="form-control" >
+                    <input type="text" id="name" name="name" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" >
+                    <input type="email" id="email" name="email" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" class="form-control" ></textarea>
+                    <textarea id="message" name="message" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
@@ -96,21 +96,54 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h5>Enlaces</h5>
-                    <ul>
-                        <li><a href="#">Enlace 1</a></li>
-                        <li><a href="#">Enlace 2</a></li>
-                        <li><a href="#">Enlace 3</a></li>
+                <div class="col-md-3">
+                    <img src="images/logo.png" alt="Gatherer Logo" class="footer-logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod Lorem ip consectetur sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Get Stared</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Need Helps</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col">
-                    <h5>Información de la empresa</h5>
-                    <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
+                <div class="col-md-3">
+                    <h5>Support Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our Faq</a></li>
+                        <li><a href="#">Our Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Apps Download</a></li>
+                        <li><a href="#">Our News</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Latest News</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod.</p>
+                    <p><i class="far fa-calendar-alt"></i> 15 June, 2021</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed eiusmod.</p>
+                    <p><i class="far fa-calendar-alt"></i> 15 June, 2021</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2024 Restaurante. Todos los derechos reservados. Designed by Theme Family</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

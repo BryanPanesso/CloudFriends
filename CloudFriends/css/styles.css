@@ -5,6 +5,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #0d3b66;
+    background-color: #faf0ca;
 }
 
 header {
@@ -24,9 +26,8 @@ footer {
 h2 {
     margin-top: 40px;
     margin-bottom: 20px;
+    color: #f95738;
 }
-
-
 
 /* Carrusel */
 .carousel-item img {
@@ -34,6 +35,13 @@ h2 {
     object-fit: cover;
 }
 
+.carousel-caption h5 {
+    color: #f4d35e;
+}
+
+.carousel-caption p {
+    color: #ee964b;
+}
 
 /* Sección de contacto */
 #contact-form .form-group {
@@ -41,13 +49,13 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #f95738;
+    border-color: #f95738;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
+    background-color: #ee964b;
+    border-color: #ee964b;
 }
 
 /* Responsivo */
@@ -58,7 +66,6 @@ h2 {
 
     .carousel-item img {
         height: 200px;
-
     }
 
     main {
@@ -69,25 +76,96 @@ h2 {
         padding: 10px;
     }
 }
+
+/* Personalización de iconos de control del carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000; /* Cambia #000 por el color deseado */
-    background-image: none; /* Remueve el ícono SVG predeterminado */
+    background-color: #000;
+    background-image: none;
     width: 30px;
     height: 30px;
-    border-radius: 50%; /* Hace que el fondo sea circular */
+    border-radius: 50%;
 }
 
 .carousel-control-prev-icon::before,
 .carousel-control-next-icon::before {
-    content: '‹'; /* Flecha izquierda para prev */
+    content: '‹';
     display: inline-block;
     font-size: 30px;
-    color: #fff; /* Color de la flecha */
+    color: #fff;
     line-height: 30px;
     text-align: center;
 }
 
 .carousel-control-next-icon::before {
-    content: '›'; /* Flecha derecha para next */
+    content: '›';
 }
+/* Footer */
+footer {
+    background-color: #0d3b66;
+    color: #faf0ca;
+    padding: 40px 0;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+footer h5 {
+    color: #f4d35e;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+footer h5::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: #f95738;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #faf0ca;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #f95738;
+}
+
+footer p {
+    color: #faf0ca;
+    line-height: 1.6;
+}
+
+footer .social-icons {
+    margin-top: 20px;
+}
+
+footer .social-icons a {
+    color: #f4d35e;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer .social-icons a:hover {
+    color: #f95738;
+}
+
+/* Iconos de Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
