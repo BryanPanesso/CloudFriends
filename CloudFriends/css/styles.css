@@ -100,6 +100,8 @@ h2 {
 .carousel-control-next-icon::before {
     content: '›';
 }
+
+
 /* Footer */
 footer {
     background-color: #0d3b66;
@@ -169,3 +171,147 @@ footer .social-icons a:hover {
 
 /* Iconos de Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Opiniones de clientes */
+.customer-reviews {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto; /* Centra el cuadro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*text-align: center; /* Centra el contenido dentro del cuadro */
+}
+
+.review-header {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para centrar los elementos verticalmente */
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review-header h3 {
+    font-size: 1.2em;
+    color: #0D3B66; /* Color de la paleta */
+    margin-bottom: 10px;
+}
+
+#dish-select {
+    font-size: 1em;
+    padding: 5px 10px; /* Añade un poco de padding horizontal */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #FAF0CA; /* Color de la paleta */
+    color: #333;
+}
+
+.review-header .category {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px; /* Añade un poco de margen superior */
+}
+
+.review {
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-avatar {
+    background-color: #0D3B66; /* Color de la paleta */
+    color: #fff;
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.review-date {
+    font-size: 0.85em;
+    color: #999;
+}
+
+.review-text {
+    margin-bottom: 10px;
+}
+
+.review-text p {
+    margin: 0;
+    color: #555;
+    font-size: 1em;
+}
+
+.review-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.review-footer .rating span {
+    margin-right: 5px;
+}
+
+.rating button {
+    margin: 0 5px;
+}
+
+.reply {
+    cursor: pointer;
+    font-size: 1em;
+    color: #007bff;
+    background: none;
+    border: none;
+}
+
+.comments {
+    margin-left: auto;
+}
+
+.review-response {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.response-button {
+    background-color: #0D3B66; /* Color de la paleta */
+    color: #fff;
+    border: 1px solid #0D3B66;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.response-button:hover {
+    background-color: #F4D35E; /* Cambia el color al pasar el ratón */
+    border: 1px solid #F4D35E;
+    color: #0D3B66;
+}

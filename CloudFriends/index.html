@@ -22,7 +22,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reviews">Opiniones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#review">Opiniones</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
             </div>
@@ -59,19 +59,82 @@
         <section id="menu" class="text-center">
             <h2>Menú</h2>
             <div id="menu-list" class="row">
-                <!-- Lista de platos cargada dinámicamente -->
             </div>
         </section>
 
-        <section id="reviews" class="text-center">
-            <h2>Opiniones de nuestros clientes</h2>
-            <div class="review">
-                <p>Cliente 1: ¡Excelente comida y servicio!</p>
+        <div id="review" class="customer-reviews">
+            <div class="review-header">
+                <label for="dish-select">Selecciona un plato:</label>
+                <select id="dish-select">
+                    <option value="Corba">Corba</option>
+                    <option value="Sushi">Sushi</option>
+                    <option value="Burek">Burek</option>
+                    <option value="Bistek">Bistek</option>
+                    <option value="Tamiya">Tamiya</option>
+                    <option value="Kumpir">Kumpir</option>
+                    <option value="Kafteji">Kafteji</option>
+                    <option value="Wontons">Wontons</option>
+                    <option value="Lasagne">Lasagne</option>
+                </select>
             </div>
-            <div class="review">
-                <p>Cliente 2: Ambiente acogedor y platos deliciosos.</p>
+        
+            <div class="review-container">
+                <div class="review">
+                    <div class="review-header">
+                        <h3>¿ES DELICIOSO ESTE PLATO?</h3>
+                        <span class="category">anonimo 15/09/2017 | Categoría Sabor y Presentación</span>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-author">
+                            <div class="author-avatar">D</div>
+                            <div class="author-info">
+                                <span class="author-name">dimonicukarell</span>
+                                <span class="review-date">18/09/2017</span>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>“Sí, es absolutamente delicioso! Además, la presentación es impecable.”</p>
+                        </div>
+                        <div class="review-footer">
+                            <div class="rating">
+                                <span>Valorar:</span>
+                                <button class="btn btn-outline-success btn-sm"><i class="fas fa-thumbs-up"></i></button>
+                                <button class="btn btn-outline-danger btn-sm"><i class="fas fa-thumbs-down"></i></button>
+                            </div>
+                            <button class="reply btn btn-link">Responder</button>
+                            <span class="comments">Sin comentarios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-content">
+                        <div class="review-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <span class="author-name">anonimo</span>
+                                <span class="review-date">15/09/2017</span>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>“Sí, sin lugar a dudas. El sabor es exquisito.”</p>
+                        </div>
+                        <div class="review-footer">
+                            <div class="rating">
+                                <span>Valorar:</span>
+                                <button class="btn btn-outline-success btn-sm"><i class="fas fa-thumbs-up"></i></button>
+                                <button class="btn btn-outline-danger btn-sm"><i class="fas fa-thumbs-down"></i></button>
+                            </div>
+                            <button class="reply btn btn-link">Responder</button>
+                            <span class="comments">Sin comentarios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-response">
+                    <span>“¿Es delicioso este plato?”</span>
+                    <button class="response-button">Responder a esta pregunta</button>
+                </div>
             </div>
-        </section>
+        </div>
 
         <section id="contact" class="text-center">
             <h2>Contacto</h2>
