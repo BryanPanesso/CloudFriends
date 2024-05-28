@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Logo del restaurante" width="60" height="60" class="d-inline-block align-top">
+                <img src="images/logo.ico" alt="Logo del restaurante" width="60" height="60" class="d-inline-block align-top">
                 CloudFriends
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,39 +35,39 @@
                 <div class="carousel-item active">
                     <img src="images/img1.jpg" class="d-block w-100" alt="Primera imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Bienvenidos CloudFriends</h5>
+                        <h5>Bienvenidos a CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/img2.jpg" class="d-block w-100" alt="Segunda imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Bienvenidos CloudFriends</h5>
+                        <h5>Bienvenidos a CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/img3.jpg" class="d-block w-100" alt="Tercera imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Bienvenidos CloudFriends</h5>
+                        <h5>Bienvenidos a CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/img4.jpg" class="d-block w-100" alt="Cuarta imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Bienvenidos CloudFriends</h5>
+                        <h5>Bienvenidos a CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="images/img5.jpg" class="d-block w-100" alt="Quinta imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Bienvenidos CloudFriends</h5>
+                        <h5>Bienvenidos a CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+               <!-- <div class="carousel-item">
                     <img src="images/img6.jpg" class="d-block w-100" alt="Sexta imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Bienvenidos CloudFriends</h5>
@@ -80,11 +80,11 @@
                         <h5>Bienvenidos CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
-                </div>
+                </div>-->
                 <div class="carousel-item">
                     <img src="images/img8.jpg" class="d-block w-100" alt="Octava imagen destacada">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Bienvenidos CloudFriends</h5>
+                        <h5>Bienvenidos a CloudFriends</h5>
                         <p>Disfruta de los mejores platos</p>
                     </div>
                 </div>
@@ -182,24 +182,47 @@
         </div>
 
         <section id="contact" class="text-center">
-            <h2>Contacto</h2>
-            <form id="contact-form" class="mx-auto" style="max-width: 600px;">
-                <div class="form-group">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" class="form-control">
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h2>CONTÁCTANOS</h2>
+                    <p>Si tienes alguna duda, comentario o sugerencia, puedes contactarnos y nos comunicaremos contigo lo antes posible.</p>
+                    <img src="images/logo.png" alt="Clouds Friends" class="contact-logo">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control">
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo*</label>
+                            <input type="text" id="name" name="name" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Comentarios*</label>
+                            <textarea id="message" name="message" class="form-control" ></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="privacy-policy" required>
+                            <label class="form-check-label" for="privacy-policy">He leído y acepto la política de privacidad</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <p class="required-note">*Los campos marcados con asterisco son obligatorios</p>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            </div>
+            <div id="map-container">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.303317436581!2d150.9559502120971!3d-33.8302876169549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bdff8b0f2d8d%3A0xcfae54d83a7bd819!2sCloud%20Friends!5e0!3m2!1ses-419!2sco!4v1716925410043!5m2!1ses-419!2sco"
+                    width="100%" 
+                    height="400" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="">
+                </iframe>
+            </div>
         </section>
-    </main>
+        
 
     <footer>
         <div class="container">

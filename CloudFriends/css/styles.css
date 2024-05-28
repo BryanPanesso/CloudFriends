@@ -43,7 +43,7 @@ body {
 
 /* Estilo del logo */
 .navbar-brand img {
-    width: 50px; /* Aumenta el tamaño del logo */
+    width: 100px; /* Aumenta el tamaño del logo */
     height: auto;
     margin-right: 10px; /* Agrega margen para separación */
 }
@@ -97,40 +97,6 @@ body {
 
 .carousel-caption p {
     color: #ee964b;
-}
-
-/* Sección de contacto */
-#contact-form .form-group {
-    margin-bottom: 15px;
-}
-
-.btn-primary {
-    background-color: #f95738;
-    border-color: #f95738;
-}
-
-.btn-primary:hover {
-    background-color: #ee964b;
-    border-color: #ee964b;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .carousel-item img {
-        height: 200px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    footer .container {
-        padding: 10px;
-    }
 }
 
 /* Carousel Styles */
@@ -238,7 +204,7 @@ footer .social-icons a:hover {
     max-width: 800px;
     margin: 20px auto; /* Centra el cuadro */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /*text-align: center; /* Centra el contenido dentro del cuadro */
+    
 }
 
 .review-header {
@@ -371,4 +337,150 @@ footer .social-icons a:hover {
     background-color: #F4D35E; /* Cambia el color al pasar el ratón */
     border: 1px solid #F4D35E;
     color: #0D3B66;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #0d3b66;
+    background-color: #faf0ca;
+    padding-top: 70px; /* Para la barra de navegación fija */
+}
+
+header .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Sección de contacto */
+#contact {
+    padding: 20px;
+    background-color: #faf0ca;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-left h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #0d3b66;
+}
+
+.contact-left p {
+    color: #0d3b66;
+}
+
+.contact-logo {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #0d3b66;
+}
+
+#contact-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#contact-form .form-check-label {
+    color: #0d3b66;
+}
+
+#contact-form button.btn-primary {
+    background-color: #f95738;
+    border-color: #f95738;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#contact-form button.btn-primary:hover {
+    background-color: #ee964b;
+    border-color: #ee964b;
+}
+
+#contact-form .required-note {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #f95738;
+    text-align: left;
+}
+
+/* Contenedor del mapa */
+#map-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        max-width: 100%;
+    }
+
+    .contact-logo {
+        max-width: 100%;
+        height: auto;
+    }
+}
+.btn-primary {
+    background-color: #f95738;
+    border-color: #f95738;
+}
+
+.btn-primary:hover {
+    background-color: #ee964b;
+    border-color: #ee964b;
 }
