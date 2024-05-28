@@ -35,3 +35,5 @@ function displayMeals(meals) {
         menuList.appendChild(mealCard);
     });
 }
+// ________________________________
+
