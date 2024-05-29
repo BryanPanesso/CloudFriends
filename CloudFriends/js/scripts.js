@@ -27,7 +27,7 @@ function displayMeals(meals) {
                 <div class="card-body">
                     <h5 class="card-title">${meal.strMeal}</h5>
                     <p class="card-text">${meal.strInstructions.substring(0, 150)}...</p>
-                    <button class="btn btn-primary" disabled>Ver Receta</button>
+                    <button class="btn btn-primary" disabled>See Recipe</button>
                 </div>
             </div>
         `;
@@ -54,18 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
         let errorMessage = '';
 
         if (!name) {
-            errorMessage += 'El campo Nombre completo es obligatorio.<br>';
+            errorMessage += 'The Full Name field is required.<br>';
         }
         if (!email) {
-            errorMessage += 'El campo Email es obligatorio.<br>';
+            errorMessage += 'The Email field is required.<br>';
         } else if (!validateEmail(email)) {
-            errorMessage += 'Por favor, ingresa un Email válido.<br>';
+            errorMessage += 'Please enter a valid Email.<br>';
         }
         if (!message) {
-            errorMessage += 'El campo Comentarios es obligatorio.<br>';
+            errorMessage += 'The Comments field is required.<br>';
         }
         if (!privacyPolicy) {
-            errorMessage += 'Debes aceptar la política de privacidad.<br>';
+            errorMessage += 'You should accept the privacy policy.<br>';
         }
 
         // Mostrar mensajes de error si los hay
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             errorDiv.classList.add('d-none');
             // Aquí puedes enviar el formulario si todos los campos son válidos
             form.submit(); // Descomentar para enviar el formulario
-            alert('Formulario enviado correctamente!');
+            alert('Form submitted successfully!');
         }
     });
 });
@@ -112,7 +112,7 @@ function displayMeals(meals) {
                 <div class="card-body">
                     <h5 class="card-title">${meal.strMeal}</h5>
                     <p class="card-text">${meal.strInstructions.substring(0, 150)}...</p>
-                    <button class="btn btn-primary" disabled>Ver Receta</button>
+                    <button class="btn btn-primary" disabled>See Recipe</button>
                 </div>
             </div>
         `;
